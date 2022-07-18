@@ -91,7 +91,7 @@ confgen
 
 optional arguments:
   -h, --help            show this help message and exit
-  --mol_dir MOL_DIR     input .mol or .xyz structures directory
+  --mol_dir MOL_DIR     input .mol structures directory
   --out_dir OUT_DIR     directory with output data
   --pal PAL             number of CPU cores to use in calculations
   --conf_level {ff,semi,dft,ff_dft}
