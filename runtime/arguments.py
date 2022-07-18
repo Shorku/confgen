@@ -50,11 +50,13 @@ PARSER.add_argument('--orca_thresh_keep',
 
 PARSER.add_argument('--orca_path',
                     type=str,
-                    help="""ORCA location, can also be taken from env""")
+                    help="""ORCA location, it can also be taken from
+                    environment""")
 
 PARSER.add_argument('--conf_path',
                     type=str,
-                    help="""CONFORMERS location, can also be taken from env""")
+                    help="""CONFORMERS location, it can also be taken from
+                    environment""")
 
 
 def parse_args(flags):

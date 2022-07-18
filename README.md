@@ -13,16 +13,16 @@ using RDKit and optimize them using ORCA.
 
 ## Overview
  
-The general worflow is pretty straightforward:
+The general workflow is pretty straightforward:
 
 - Generate a set of conformers of a molecule using RDKit
-- Remove duplicated conformers geometries using external script
+- Remove duplicated conformers geometries using an external script
 - Optimize conformers geometries with some semiempirical method using ORCA
 - Remove the conformers outside a predefined energy window
-- Remove duplicated conformers geometries using external script
+- Remove duplicated conformers geometries using an external script
 - Optimize conformers geometries with some DFT method using ORCA
 - Remove the conformers outside a predefined energy window
-- Remove duplicated conformers geometries using external script
+- Remove duplicated conformers geometries using an external script
 
 ## Getting started
 
@@ -54,7 +54,7 @@ standalone script for identical structures filtering
   
 ### Run
 
-The script will consume .mol file(s) from some input directory.
+The script can consume multiple .mol files from the input directory. 
  
    **Basic:**
    
@@ -108,9 +108,9 @@ optional arguments:
   --orca_thresh_keep ORCA_THRESH_KEEP
                         energy window to keep conformers within, kJ/mol
   --orca_path ORCA_PATH
-                        ORCA location, can also be taken from env
+                        ORCA location, it can also be taken from env
   --conf_path CONF_PATH
-                        CONFORMERS location, can also be taken from env
+                        CONFORMERS location, it can also be taken from env
 ```
 
 ## TODO
@@ -118,4 +118,5 @@ optional arguments:
 - Add RDKit Docker
 - Prerequisites setup guide
 - RDKit defaults adjustment (so far it keeps warping phenyls)
-- get into RDKit duplicate filtering                        
+- get into RDKit duplicate filtering
+- logging
